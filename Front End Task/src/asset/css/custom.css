@@ -1,0 +1,1343 @@
+
+
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{   
+    
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+
+
+    background-color: rgb(248, 249, 250);
+
+}
+
+.row
+{
+    width: 125rem;
+    margin: auto;
+}
+
+section
+{
+    overflow: hidden;
+    padding: 5rem 0rem;
+}
+
+/***************************************/
+/**********Navigation*****************/
+/***************************************/
+
+.navigation-background
+{
+    background-color: rgb(237, 238, 243) !important;
+
+    padding-top: 2rem;
+
+}
+
+
+
+.navLogo
+{
+    width: 14rem;
+}
+
+
+.navigation-list
+{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+
+}
+
+.navigation-list:hover
+{
+    color: #6278FF;
+    border-bottom: 0.2rem solid  #6278FF;
+    
+}
+
+
+.navigation-background-scroll
+{
+    background-color: rgb(237, 238, 243) !important;
+    padding-top: 2rem;
+
+    z-index: 11111111111111111111111111;
+
+    box-shadow: 0.5rem 0.5rem 2rem #656566;
+}
+
+
+.nav-right
+{
+    margin-left: 10rem;
+}
+.nav-right .nav-log-in
+{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    border:0.2rem solid #6278FF;
+    padding: 0.4rem 2rem;
+
+    border-radius: 10rem;
+    color: #6278FF;
+}
+
+
+.nav-right .nav-sign-up
+{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    border:0.2rem solid #6278FF;
+    padding: 0.4rem 2rem;
+
+    border-radius: 10rem;
+    background-color: #6278FF;
+    color: white;
+    margin-left: 1rem;
+}
+
+
+/***************************************/
+/**********Hero Section*****************/
+/***************************************/
+
+.hero-section
+{
+    width: 100%;
+    
+    background-color: rgb(237, 238, 243);
+
+}
+
+.hero-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    margin-top: 6rem;
+}
+
+
+.hero-grid .left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-grid .left .text-box
+{
+width: 95%;
+}
+
+.hero-grid .left .text-box h1
+{
+    font-size: 5.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.hero-grid .left .text-box  .blue
+{
+    color: #6278FF;
+    font-size: 5.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.hero-grid .left .text-box p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin: 2rem 0rem;
+}
+
+.hero-grid .left .text-box .hero-btn
+{
+    width: 15rem;
+    height: 5rem;
+    background-color: #6278FF;
+    color: white;
+    border:0rem;
+    font-size: 1.4rem;
+    border-radius: 5rem;
+
+}
+
+.hero-grid .left .text-box .playBtn
+{
+    width: 5rem;
+    margin-left: 2rem;
+}
+
+
+.hero-grid .left .text-box .watch
+{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+.hero-grid .right
+{
+    position: relative;
+}
+.hero-grid .heroImage
+{
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.heroImg
+{
+    width: 95%;
+  z-index: 10 !important;
+}
+
+.hero-grid .right .polygon
+{
+    width: 3.5rem;
+    position: absolute;
+    top:5.5rem;
+    left: 5rem;
+
+    
+}
+
+.hero-grid .right .dotedTop
+{
+    width: 12.5rem;
+    position: absolute;
+    top:4.5rem;
+    right: 2rem;
+    z-index: 9 !important;
+    
+}
+
+.hero-grid .right .mouse
+{
+    width: 4rem;
+    position: absolute;
+    top:7.5rem;
+    right: 2rem;
+    
+    
+}
+
+.hero-grid .right .mouse2
+{
+    width: 4rem;
+    position: absolute;
+    bottom:1.5rem;
+    left: 4.5rem;
+    z-index: 9 !important;
+}
+
+.hero-grid .right .dotedBottom
+{
+    width: 18rem;
+    position: absolute;
+    bottom:5.5rem;
+    left: -7.5rem;
+    z-index: 9 !important;
+    
+}
+
+/* ***********HERO CARD **********************/
+.hero-card
+{
+    width: 17rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    font-family: 'Poppins', sans-serif;
+
+    position: absolute;
+    bottom: 0rem;
+    right: -2rem;
+}
+
+.hero-card-top-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hero-card-top-grid p
+{
+    font-size: 1.1rem;
+}
+
+.hero-card-bottom-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #6278FF;
+
+    margin-top: 0.5rem;
+}
+/* ***********HERO CARD **********************/
+
+.loop
+{
+    width: 47rem;
+    position: absolute;
+    top:50rem;
+}
+
+
+.hero-bottom-grid
+{
+
+    margin-top: 10rem;
+    width: 100%;
+    background-color: white;
+    
+    border-radius: 1rem;
+   
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem 4rem;
+    
+}
+
+.hero-bottom-grid-image
+{
+    width: 70%;
+}
+
+.hero-bottom-grid-img
+{
+    width: 100%;
+}
+
+
+
+
+
+/***************************************/
+/**********About Section*****************/
+/***************************************/
+.about-section
+{
+    width: 100%;
+
+    background-color: white;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+   
+}
+
+.about-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.about-image-bandle
+{
+    width: 90%;
+   
+    position:relative;
+    margin: auto;
+
+}
+.about-grid .aboutImg
+{
+    position: absolute;
+    top: 0.1rem;
+    width: 80%;
+    z-index: 10999 !important;
+}
+
+.about-grid .star
+{
+    position: absolute;
+    width: 10rem;
+    right: 9rem;
+    top:-2rem;
+    z-index: 20 !important;
+}
+
+.about-grid .rectangle
+{
+    width: 80%;
+
+    position: absolute;
+    bottom: -32rem;
+    left: -5rem;
+    z-index: 20 !important;
+}
+
+
+.about-grid .right h4
+{
+    color: #6278FF;
+    
+
+}
+
+.about-grid .right h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.about-grid .right p
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.about-btn
+{
+    width: 13rem;
+    height: 4rem;
+    background-color: #6278FF;
+    color: white;
+    border:0rem;
+    font-size: 1.4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+
+}
+
+
+
+
+/***************************************/
+/**********Course Section*****************/
+/***************************************/
+
+.course-section
+{
+    background-color: #EDEEF3;
+    width: 100%;
+}
+
+
+.course-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
+
+    margin-top: 3rem;
+}
+
+.course-grid .col
+{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.course-grid .courseImage
+{
+    width: 100%;
+    margin: auto;
+
+    position: relative;
+}
+
+.course-grid .courseImg
+{
+    width: 100%;
+}
+
+.courseImage-overlay
+{
+position: absolute;
+top:3rem;
+right: 2rem;
+background-color: rgba(255, 255, 255, 0.718);
+padding:0.6rem 1rem;
+color: #6278FF;
+border-radius: 0.5rem;
+}
+
+.course-inner-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem 0rem;
+    justify-content: space-around;
+
+    margin-top: 3rem;
+}
+
+.course-inner-grid h3
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.course-inner-grid .amount
+{
+    color:#6278FF ;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.course-inner-grid .course-btn
+{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #6278FF;
+    color: white;
+    border:0rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+    float: right;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.smallStar
+{
+    width: 10rem;
+    float: right;
+}
+
+
+
+.bestBatch
+{
+    width: 3rem;
+}
+
+.bestSeller
+{
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 1.7rem;
+    margin-left: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    color: #6278FF;;
+}
+
+.course-section h4
+{
+    color: #6278FF;
+}
+
+
+.course-section h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Services Section*****************/
+/***************************************/
+
+.services-section
+{
+    background-color: white;
+    width: 100%;
+}
+
+
+.services-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem 2rem;
+
+    margin-top: 3rem;
+}
+.services-grid h3
+{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+
+    margin-left: -2rem !important;
+}
+
+.services-grid .col
+{
+    background-color: rgb(237, 238, 243);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 24rem;
+
+    border-radius: 1rem;
+}
+
+.services-grid .serviceImage
+{
+    width: 25%;
+    
+}
+
+.services-grid .serviceImg
+{
+    width: 60%;
+}
+
+
+
+
+.services-section h4
+{
+    color: #6278FF;
+}
+
+
+.services-section h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+
+
+/***************************************/
+/**********Team Section*****************/
+/***************************************/
+
+.team-section
+{
+    background-color: rgb(237, 238, 243);
+    width: 100%;
+}
+
+
+
+
+.team-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0rem 0rem;
+
+    margin-top: 3rem;
+}
+ 
+.team-grid .col
+{
+    position: relative;
+}
+
+
+.team-grid .teamImage
+{
+    width: 30rem !important;
+}
+
+.team-grid .teamImg
+{
+    width: 100% !important;
+}
+
+.team-overlay
+{
+    
+    background-color: #6278FF;
+    position: absolute;
+
+    
+
+    bottom: 4.3rem;
+    left: 4.3rem;
+    padding: 1.6rem 4.2rem;   
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.team-overlay .member-name
+{
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+.team-overlay .member-des
+{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+}
+
+
+.team-section h4
+{
+    color: #6278FF;
+    text-align: center;
+}
+
+
+.team-section h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Testimonial Section*****************/
+/***************************************/
+
+.testimonial-section
+{
+    background-color: white;
+    width: 100%;
+
+    padding-bottom: 18rem;
+}
+
+.testimonial-section h4
+{
+    color: #6278FF;
+}
+
+
+.testimonial-section h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+.testimonial-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem 3rem;
+
+    margin-top: 3rem;
+}
+
+.testimonial-grid p
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+
+.testimonial-input
+{
+    margin-top: 3rem;
+    width: 70%;
+    height: 3.5rem;
+    border: 0.2rem solid #6278FF;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    padding-left: 2rem;
+
+    font-size: 1.6rem;
+    color: #6278FF;
+}
+
+.testimonial-section .rightArrow
+{
+    display: inline-block;
+    width: 4rem;
+    height: 3.5rem;
+    border: 0.2rem solid #6278FF;
+    border-radius: 45%;
+   
+
+    font-size: 2rem;
+    color: #6278FF;
+
+    margin-left: -3.2rem;
+    background-color: white;
+    padding: 0rem 0.3rem;
+}
+
+.testimonial-section .rightArrow2
+{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+   
+
+    font-size: 2.1rem;
+    color: #6278FF;
+
+    margin-left: -1.8rem;
+    background-color: rgba(226, 228, 237, 0.66);
+   
+}
+
+
+
+
+.testimonial-section .testimonialImage
+{
+    width: 90%;
+    margin: auto;
+
+    position: relative;
+}
+
+.testimonial-section .testimonialImg
+{
+    width: 60%;
+}
+
+.testimonial-section .argu
+{
+    width: 30rem;
+    background-color: rgb(237, 238, 243);
+    padding: 1rem;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    border-left: 1rem solid #6278FF;
+
+
+    position: absolute;
+
+   bottom:-11rem;
+   right: 0rem;
+    
+}
+
+.testimonial-section .argu p
+{
+    margin-top: 0rem;
+    font-size: 1.2rem;
+}
+
+.testimonial-section .argu h3
+{
+    float: left;
+}
+
+.testimonial-section .argu .smallStar2
+{
+    float: right;
+    width: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Footer Section*****************/
+/***************************************/
+
+.footer-section
+{
+    background-color: rgb(19, 39, 66);
+    width: 100%;
+
+}
+
+
+.footer-section .footer-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem 3rem;
+
+}
+
+.footer-section .footerLogo,.apple,.googleFooter
+{
+    width: 14rem;
+}
+
+.footer-section .googleFooter
+{
+    margin-top: 1rem;
+    width: 14rem;
+}
+.footer-section p
+{
+    color: white;
+    font-size: 1.2rem;
+    margin: 2rem 0rem;
+}
+
+.footer-section h4
+{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.footer-section h3
+{
+    color: white;
+    font-size: 1.6rem;
+   font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-section .twitter,.facebook
+{
+    margin-left: 2rem;
+}
+
+.footer-input
+{
+    margin-top: 3rem;
+    width: 70%;
+    height: 3.5rem;
+    border: 0rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+    padding-left: 2rem;
+
+    font-size: 1.3rem;
+    background-color: rgb(217, 217, 217);
+}
+
+.footerBtn
+{
+    width: 8rem;
+    height: 3.5rem;
+    background-color: #6278FF;
+    color: white;
+    border:0rem;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+
+    margin-left: -6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************/
+/**********Responsive Design************/
+/***************************************/
+
+
+@media screen and (max-width:1300px)
+{
+    .row
+    {
+        width: 100%;
+        padding: 0rem 4rem;
+    }
+
+   
+
+   
+}
+
+@media screen and (max-width:1200px)
+{
+    
+
+    .about-grid .rectangle
+    {
+        bottom: -28rem;
+    }
+
+    .team-grid
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    
+    .footer-section .footer-grid
+    {
+        grid-gap: 1rem;
+    }
+   
+}
+
+@media screen and (max-width:1024px)
+{
+    html,body
+    {   
+        font-size: 55.5%;
+    }
+    
+    .hero-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .hero-grid .heroImage
+    {
+        position: relative;
+        width: 40%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-grid .text-box
+    {
+        text-align: center;
+    }
+
+    .loop{
+        display: none;
+    }
+
+    .testimonial-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .testimonial-section .testimonialImage
+    {
+        width: 60%;
+        margin: auto;
+
+        position: relative;
+    }
+
+
+  
+}
+
+@media screen and (max-width:994px)
+{
+
+    .navigation-background
+    {
+        text-align:center;
+    }
+
+    .navigation-background-scroll
+    {
+        text-align:center;
+    }
+
+    .navigation-list
+    {
+        margin: 1rem;
+    }
+
+    .nav-right .nav-log-in
+    {
+        margin-left: -10rem;
+        margin-top: 2rem;
+    }
+
+
+    .navLogo
+    {
+        width: 14rem;
+    }
+
+}
+
+@media screen and (max-width:900px)
+{
+    .about-grid .rectangle
+    {
+        bottom: -22rem;
+    }
+
+    .services-grid
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .team-grid
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+   
+
+    
+    .footer-section .footer-grid
+    {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 7rem 3rem;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px)
+{
+    html,body
+    {   
+        font-size: 50.5%;
+    }
+    .hero-grid .heroImage
+    {
+        position: relative;
+        width: 60%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+
+    .batchImg
+    {
+        width: 40%;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .about-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .about-grid .right
+    {
+        padding-top: 40rem;
+    }
+    .about-image-bandle
+    {
+        width: 70%;
+    
+    }
+    .about-grid .rectangle
+    {
+        bottom: -35rem;
+    }
+
+    .services-grid
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (max-width:682px)
+{
+    .about-grid .right
+    {
+        padding-top: 30rem;
+    }
+    
+    .about-grid .rectangle
+    {
+        bottom: -28rem;
+    }
+
+    .course-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .testimonial-section .testimonialImage
+    {
+        width: 80%;
+        margin: auto;
+
+    }
+
+}
+
+@media screen and (max-width:520px)
+{
+    html,body
+    {   
+        font-size: 44.5%;
+    }
+    
+    
+    .hero-grid .heroImage
+    {
+        position: relative;
+        width: 70%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-bottom-grid
+    {
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 1rem 1rem;
+        
+    }
+        .hero-bottom-grid-image
+    {
+        width: 95%;
+    }
+    .about-grid .right
+    {
+        padding-top: 30rem;
+    }
+    
+    .about-grid .rectangle
+    {
+        bottom: -25rem;
+    }
+
+    .course-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .team-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .footer-section .footer-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 8rem;
+    }
+}
+
+@media screen and (max-width:420px)
+{
+    .about-grid .right
+    {
+        padding-top: 25rem;
+    }
+    
+    .about-grid .rectangle
+    {
+        bottom: -20rem;
+    }
+
+    .testimonial-section .testimonialImage
+    {
+        width: 90%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:380px)
+{
+    
+    
+    .about-grid .rectangle
+    {
+        bottom: -18rem;
+    }
+
+    .services-grid
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

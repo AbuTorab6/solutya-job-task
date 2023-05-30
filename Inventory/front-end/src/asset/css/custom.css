@@ -1,0 +1,1817 @@
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{   
+font-family: 'Montserrat', sans-serif;
+
+text-rendering: optimizeLegibility;
+background-color: rgb(248, 249, 250);
+
+}
+
+.row
+{
+    width: 1140px;
+    margin: auto;
+}
+
+section
+{
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+/***************************************/
+/**********Navigation Bar*****************/
+/***************************************/
+
+.navigation-bg
+{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 0.5px 5px rgb(136, 136, 136);
+}
+.navigation-brand
+{
+    color: black;
+    
+}
+
+.navigation-brand-text
+{
+    border-bottom: 2px solid rgb(114, 201, 182);
+}
+.navigation-brand:hover
+{
+    color: black;
+}
+
+.nav-logo-open
+{
+    color: rgb(114, 201, 182);
+    margin-right: 10px;
+    margin-left: 150px;
+
+    transition: 0.3s;
+}
+
+
+.nav-logo-close
+{
+    color: rgb(114, 201, 182);
+    margin-right: 10px;
+    margin-left: 0px;
+    transition: 0.3s;
+}
+
+.nav-logo:hover
+{
+    cursor: pointer;
+}
+/***************************************/
+/**********Drop down*****************/
+/***************************************/
+.drp-down-img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid white;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #00A884;
+    outline-offset: 1px;
+}
+
+
+.drp-down
+{
+    position: relative;
+    display: inline-block;
+}
+
+.drp-down-content
+{
+    width: 260px;
+
+    position: absolute;
+    right: 0px;
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow:2px 2px 8px rgb(136, 136, 136);
+
+    display: none;
+}
+
+.drp-down:hover .drp-down-content
+{
+    display: block;
+}
+
+.drp-down-content-img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 85px;
+    object-fit: cover;
+}
+
+.drp-down-content-info h6
+{
+    text-align: center;
+}
+.drp-down-item
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
+.drp-down-item:hover
+{
+    cursor: pointer;
+    border-left: 10px solid rgb(114, 201, 182);
+    background-color: rgba(114, 201, 182, 0.37);
+    color: black;
+    
+    transition: 0.3s;
+}
+
+/************************************/
+/**********Side Navigation************/
+/***************************************/
+
+.side-nav-image-div
+{
+    
+    width: 30%;
+    margin: auto;
+    
+}
+
+.side-nav-image
+{
+    width: 100%;
+    margin: 40px 0px;
+}
+
+
+
+.side-nav-open
+{
+    
+    width: 240px;
+    height: 100%;
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+
+    background-color: #ffffff;
+    transition: 0.3s;
+
+    z-index: 111111;
+    box-shadow: 0px 0.5px 5px rgb(136, 136, 136);
+}
+
+
+
+
+.side-nav-close
+{
+   
+    width: 0px;
+    height: 100%;
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+
+
+
+.side-nav-item
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px; 
+    transition: 0.5s;   
+}
+.side-nav-item:hover
+{
+    color: #00A884;
+}
+
+.side-nav-item-active
+{
+    border-right: 7px solid rgb(114, 201, 182);
+    color: #00A884;
+}
+
+.side-nav-icon
+{
+    margin-left: 10px;
+}
+
+.side-nav-text
+{
+    margin-left: 15px;
+}
+
+
+.side-nav .accordion-button
+{
+
+    text-decoration: none;
+    color: black;
+    padding: 10px 5px; 
+    transition: 0.2s;  
+}
+
+.side-nav .accordion-button:hover
+{  
+    border-left: 10px solid rgb(114, 201, 182);
+    background-color: rgba(114, 201, 182, 0.434); 
+}
+
+.side-nav .accordion-body
+{
+    padding: 0px;
+}
+.side-nav .accordion-item
+{
+    border: 0px;
+}
+
+
+
+/**************************************/
+/************Content******************/
+/***************************************/
+.content
+{
+    margin-top: 70px;
+    margin-left: 240px;
+    color: black;
+
+    transition: 0.3s;
+}
+
+.content-expand
+{
+    margin-top: 70px;
+    color: black;
+
+    transition: 0.3s;
+}
+
+/**************************************/
+/************Scroll Bar******************/
+/***************************************/
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(114, 201, 182) ;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/**************************************/
+/*********Full Screen Loader***********/
+/***************************************/
+.full-screen
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 100%;
+
+    display: block;
+    z-index: 5000000;
+    background-color: rgba(255, 255, 255, 0.927) !important;
+
+}
+
+
+.line .core::after
+{
+    height: 2px;
+    content: "";
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgb(114, 201, 182);
+
+
+    will-change: left, right;
+    -webkit-animation: proma 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: proma 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s
+    
+}
+
+.line .core::before
+{
+    height: 2px;
+    content: "";
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgb(114, 201, 182);
+
+    will-change: left, right;
+    -webkit-animation: liza 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: liza 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+
+
+@keyframes proma {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+
+
+@keyframes liza {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+
+
+
+
+
+.visibility-none
+{
+    display: none;
+}
+
+.visibility-yes
+{
+    display: block;
+}
+
+
+
+/**************************************/
+/*********Registration ***********/
+/***************************************/
+.regi-section
+{
+}
+.regi-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(198, 198, 198);
+
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+}
+
+.regi-section h5
+{
+    margin-bottom: 20px;
+}
+
+.regi-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+.selectRole
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+}
+
+.regi-section .checkBox
+{
+    width: 10%;
+    height: 20px;
+    border: 0.2px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 2px;
+    border-radius: 2;
+    padding-left: 0px;
+
+    
+}
+
+.regi-section .access
+{
+    margin-bottom: 20px;
+}
+
+
+.regi-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(114, 201, 182);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+.regi-section .forget-password-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+
+/**************************************/
+/*********Log IN***********/
+/***************************************/
+.login-section
+{
+    text-align: center;
+}
+.login-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+}
+
+
+.login-section h5
+{
+    margin-bottom: 20px;
+}
+
+.login-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+
+
+.login-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(114, 201, 182);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+.login-section .forget-password-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.login-section .sign-up-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+
+/**************************************/
+/**************Profile***************/
+/***************************************/
+.profile-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.profile-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.profile-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.profile-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.profile-section .profile-update-btn
+{
+
+    height: 35px;
+    background-color:rgb(114, 201, 182);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    width: 40%;
+    margin: auto;
+    display: block;
+
+    color: white;
+}
+
+.preview-profile-pic
+{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+
+    
+    
+}
+
+.preview-profile-pic-img
+{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    border:5px solid #00A884;
+
+    object-fit: cover;  /*--------------->important*/
+}
+
+
+
+
+/**************************************/
+/**************Brand List***************/
+/***************************************/
+
+.table-content
+{
+    background-color: white;
+    width: 94%;
+    margin: auto;
+    padding: 40px 40px;
+
+    border-radius: 10px;
+}
+
+.table-grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    justify-content:baseline;
+
+    margin-bottom: 30px;
+}
+
+.table-grid select
+{
+    background-color: transparent;
+
+    padding: 7px 40px;
+    border: 1px solid rgba(128, 128, 128, 0.458);
+    border-radius: 10px;
+}
+
+.table-grid .search input
+{
+    background-color: transparent;
+
+    padding: 6px 40px;
+    border: 1px solid rgba(128, 128, 128, 0.458);
+    border-radius: 10px;
+}
+
+.table-content .my-table
+{
+    height: 360px;
+    overflow: scroll;
+}
+
+td
+{
+    padding-bottom: 20px !important;
+}
+
+.table-edit-btn 
+{
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+
+}
+.table-edit-btn-link
+{
+    color: #00A884;
+}
+
+
+/* pagination design  */
+nav
+{
+    padding-top: 40px;
+}
+
+.pagination
+{
+    --bs-pagination-active-bg:#00A884;
+    --bs-pagination-active-border-color:#00A884;
+}
+
+.page-link
+{
+    display: inline-block;
+    width: 40px !important;
+    height: 40px!important;
+    border-radius: 50% !important;
+    margin-left:10px !important;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+
+/**************************************/
+/************Supplier List*************/
+/***************************************/
+
+
+.table-delete-btn
+{
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #00A884;
+}
+
+
+
+/**************************************/
+/*********Customer Create Update**********/
+/***************************************/
+.customer-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.customer-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.customer-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.customer-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.customer-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.customer-textarea
+{
+    padding-left: 20px;
+}
+
+.customer-create-update-section textarea
+{
+    display: block;
+    width: 96%;
+    height: 100px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.customer-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/**************************************/
+/*********Supplier Create Update**********/
+/***************************************/
+.supplier-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.supplier-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.supplier-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.supplier-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.supplier-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.supplier-textarea
+{
+    padding-left: 20px;
+}
+
+.supplier-create-update-section textarea
+{
+    display: block;
+    width: 96%;
+    height: 100px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.supplier-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+/**************************************/
+/*********expenseType Create Update**********/
+/***************************************/
+.expenseType-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.expenseType-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.expenseType-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.expenseType-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.expenseType-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+.expenseType-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/**************************************/
+/*********Brand Create Update**********/
+/***************************************/
+
+.brand-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.brand-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.brand-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.brand-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.brand-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+.brand-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+/**************************************/
+/*********Category Create Update**********/
+/***************************************/
+
+.category-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.category-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.category-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.category-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.category-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+.category-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/**************************************/
+/*********Customer Create Update**********/
+/***************************************/
+.expense-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.expense-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.expense-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.expense-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.expense-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.expense-form-grid select
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+
+
+.expense-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+/**************************************/
+/*********Product Create Update**********/
+/***************************************/
+.product-create-update-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.product-create-update-section h4
+{
+    padding-left: 20px;
+}
+
+.product-create-update-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.product-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.product-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.product-form-grid select
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+
+
+.product-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+/**************************************/
+/*********Expense Report**********/
+/***************************************/
+.expense-report-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.expense-report-section h4
+{
+    padding-left: 20px;
+}
+
+.expense-report-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+.report-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.report-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+
+
+
+
+.report-save-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+.report-bottom
+{
+    padding: 20px;
+    margin-top: 50px;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+}
+
+.report-bottom h6
+{
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.report-download-btn
+{
+
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+/**************************************/
+/*********Purchase Report**********/
+/***************************************/
+.purchase-report-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.purchase-report-section h4
+{
+    padding-left: 20px;
+}
+
+.purchase-report-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+/**************************************/
+/*********return Report**********/
+/***************************************/
+.return-report-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.return-report-section h4
+{
+    padding-left: 20px;
+}
+
+.return-report-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+/**************************************/
+/*********sell Report**********/
+/***************************************/
+.sell-report-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.sell-report-section h4
+{
+    padding-left: 20px;
+}
+
+.sell-report-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+    border-left: 5px solid rgb(114, 201, 182);
+    border-top: 5px solid rgb(114, 201, 182);
+   
+}
+
+
+
+
+
+
+/**************************************/
+/*********Sell Create Update**********/
+/***************************************/
+.sell-create-update-section
+{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sell-create-update-section h4
+{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.sell-form-grid
+{
+    display: grid !important;
+    grid-template-columns: 30% 67%;
+    grid-gap: 30px;
+
+}
+
+.sell-form-grid label
+{
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.81);
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.sell-form-grid .left
+{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius:  10px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+}
+
+.sell-form-grid .left input
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+} 
+
+.sell-form-grid .left select
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+
+
+
+.sell-form-grid .right
+{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius:  10px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+}
+
+.sell-detail-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+}
+
+.sell-detail-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.sell-detail-form-grid select
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+
+
+.add-to-cart-btn
+{
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+    display: block;
+
+}
+
+.sell-save-btn
+{
+    height: 35px;
+    background-color:#00A884;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin-left: 20px;
+ 
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
+
+/**************************************/
+/************Dashboard List*************/
+/***************************************/
+.dashboard-section
+{
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.dashboard-section .totalAmount-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.dashboard-section .totalAmount-grid .col
+{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0.5px 5px rgb(136, 136, 136);
+
+}
+
+.dashboard-section .chart-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+}
+
+.dashboard-section .chart-grid .col
+{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0.5px 5px rgb(136, 136, 136);
+}
+
+.chart-title
+{
+    font-weight: 600;
+}
+
+
+/**************************************/
+/**************Send OTP***************/
+/***************************************/
+.send-otp-section
+{
+    text-align: center;
+}
+.send-otp-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid #72C9B6;
+}
+
+.send-otp-section h5
+{
+    margin-bottom: 20px;
+}
+
+.send-otp-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+
+
+.send-otp-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:#72C9B6;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+
+
+/**************************************/
+/**************Verify OTP***************/
+/***************************************/
+.verify-otp-section
+{
+    text-align: center;
+}
+.verify-otp-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid #72C9B6;
+}
+
+.verify-otp-section h5
+{
+    margin-bottom: 20px;
+}
+
+.verify-otp-section .input
+{
+   
+    margin-bottom: 20px;
+ 
+    
+}
+
+
+
+.verify-otp-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:#72C9B6;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+
+
+/**************************************/
+/**************New Password***************/
+/***************************************/
+.new-password-section
+{
+    text-align: center;
+}
+.new-password-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid #72C9B6;
+}
+
+.new-password-section h5
+{
+    margin-bottom: 20px;
+}
+
+.new-password-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+}
+
+.new-password-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:#72C9B6;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
