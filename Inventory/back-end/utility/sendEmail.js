@@ -10,7 +10,7 @@ var sendEmail = async (EmailTo, EmailText, EmailSubject) =>
             secure: false,
             auth: {
                 user: "info@abutorab.me",
-                pass: 'web.3.84@abu'
+                pass: 'secret'
             },
             tls: {
                 rejectUnauthorized: false
