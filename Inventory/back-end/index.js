@@ -85,8 +85,8 @@ var URI = 'mongodb+srv://<username>:<password>@cluster0.rl4dqmo.mongodb.net/solu
 //mongodb://localhost:27017/solutyaDB
 //mongodb+srv://<username>:<password>@cluster0.rl4dqmo.mongodb.net/solutyaDB?retryWrites=true&w=majority
 var OPTION = {
-    user:'abuTorab',
-    pass:'gdfg87usgfviuywij',
+    user:'secret',
+    pass:'secret',
     autoIndex:true
 }
 
